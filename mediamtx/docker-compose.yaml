@@ -1,0 +1,9 @@
+services:
+  mediamtx:
+    image: bluenviron/mediamtx:latest
+    restart: always
+    environment:
+      MTX_PROTOCOLS: tcp
+    ports:
+      - 554:8554
+      - 1935:1935
